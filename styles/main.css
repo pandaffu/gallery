@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+}
+
+.p {
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+}
+
+#section, #section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #E8EAE8;
+}
+#section .tile, #section2 .tile {
+  max-width: 575px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  border-radius: 7px;
+}
+#section .tile .tile__container, #section2 .tile .tile__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 12px 20px 12px;
+}
+#section .tile .tile__container .tile__price, #section2 .tile .tile__container .tile__price {
+  font-size: 30px;
+  color: #3D78AA;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+}
+#section .tile .tile__gallery, #section2 .tile .tile__gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 7px;
+  height: 300px;
+}
+#section .tile .tile__gallery .tile__img--main, #section2 .tile .tile__gallery .tile__img--main {
+  grid-row: span 3/auto;
+  grid-column: span 3/auto;
+}
+#section .tile .tile__gallery .tile__img, #section2 .tile .tile__gallery .tile__img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+#section .tile .tile__gallery .tile__thumbnail, #section2 .tile .tile__gallery .tile__thumbnail {
+  box-sizing: border-box;
+  opacity: 0.7;
+}
+#section .tile .tile__gallery .active, #section2 .tile .tile__gallery .active {
+  border: 2px red solid;
+}
+#section .tile .tile__location, #section2 .tile .tile__location {
+  display: flex;
+  font-size: 20px;
+  color: #FFF;
+  font-family: "Rubik", sans-serif;
+  background: #474B4C;
+  padding: 15px 5px;
+}
+#section .tile .tile__location .tile__icon, #section2 .tile .tile__location .tile__icon {
+  color: #FFF;
+  margin-right: 3px;
+}
+#section .tile .tile__stats, #section2 .tile .tile__stats {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  background: #FFF;
+  border-radius: 7px;
+}
+#section .tile .tile__stats .tile__item, #section2 .tile .tile__stats .tile__item {
+  display: flex;
+  align-items: center;
+}
+#section .tile .tile__stats .tile__item .tile__icon, #section2 .tile .tile__stats .tile__item .tile__icon {
+  height: 20px;
+  margin-right: 5px;
+}
+#section .tile .modal, #section2 .tile .modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+#section .tile .modal .modal__container, #section2 .tile .modal .modal__container {
+  background: #FFF;
+  padding: 20px;
+}
+#section .tile .modal .modal__container .modal__main, #section2 .tile .modal .modal__container .modal__main {
+  display: flex;
+  flex-direction: column;
+}
+#section .tile .modal .modal__container .modal__main .modal__button, #section2 .tile .modal .modal__container .modal__main .modal__button {
+  position: relative;
+  margin-bottom: 20px;
+  width: 35px;
+  height: 35px;
+  left: 765px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+#section .tile .modal .modal__container .modal__main .modal__img, #section2 .tile .modal .modal__container .modal__main .modal__img {
+  max-width: 800px;
+}
+#section .tile .modal .modal__container .modal__thumbnails, #section2 .tile .modal .modal__container .modal__thumbnails {
+  display: flex;
+  justify-content: space-between;
+}
+#section .tile .modal .modal__container .modal__thumbnails .modal__thumbnail, #section2 .tile .modal .modal__container .modal__thumbnails .modal__thumbnail {
+  height: 100px;
+  margin-top: 10px;
+  cursor: pointer;
+  box-sizing: border-box;
+  opacity: 0.7;
+}
+#section .tile .modal--enabled, #section2 .tile .modal--enabled {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=main.css.map */
